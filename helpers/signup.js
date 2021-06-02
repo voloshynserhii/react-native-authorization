@@ -1,6 +1,6 @@
 const signUpWithFirebase = async (email, name, password) => {
   const response = await fetch(
-    'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDC_iclINCNQgOmiYunbMgiJ4oLUhHK51c',
+    `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.API_KEY}`,
     {
       method: 'POST',
       headers: {
